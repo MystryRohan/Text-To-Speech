@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  src: url(C:\Users\Administrator\Desktop\HTML\Portfolio\fonts\Poppins-Regular.ttf);
+  font-family: "poppins";
+}
+body {
+  font-family: poppins;
+}
+.container {
+  height: 100vh;
+  color: dimgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+h3 {
+  font-size: 20px;
+}
+#text {
+  width: 70%;
+  height: 45%;
+  background-color: peru;
+  font-size: 0.5cm;
+  font-weight: bold;
+}
+.btns {
+  word-spacing: 3px;
+}
+#play,
+#speed {
+  height: 40px;
+  width: 100px;
+  font-family: poppins;
+  transition-property: background;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.container label {
+  height: 50px;
+  width: 150px;
+  font-family: poppins;
+  font-size: 20px;
+}
+#play:hover {
+  background-color: peru;
+  border-color: peru;
+}
+.dark {
+  background-color: rgb(37, 34, 34);
+}
+.dark h3 {
+  color: lime;
+}
+.dark label {
+  color: lime;
+}
+.dark #text {
+  color: lime;
+  font-family: "Courier New";
+  font-weight: 400;
+  font-size: small;
+  background-color: black;
+}
+.dark #speed,
+.dark #play {
+  border: lime solid 1px;
+  background-color: rgb(37, 34, 34);
+  color: lime;
+}
+.dark #play:hover {
+  background-color: lime;
+  color: black;
+  border-color: lime;
+}
+.darkbtn {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: black;
+}
+.lightbtn {
+  display: none;
+}
+.dark .darkbtn {
+  display: none;
+}
+.dark .lightbtn {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: white;
+}

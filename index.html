@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VoiceAssistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Text To Speech!</h3>
+      <textarea
+        id="text"
+        cols="30"
+        rows="10"
+        placeholder="Enter Text Here..."
+      ></textarea>
+      <div class="btns">
+        <label for="speed">Play Speed</label>
+        <input type="number" id="speed" min="0.5" max="5" step=".5" value="1" />
+        <button id="play">Play</button>
+        <script src="app.js"></script>
+      </div>
+      <div class="utils">
+        <button class="darkbtn" onclick="darkMode()"></button>
+        <button class="lightbtn" onclick="lightMode()"></button>
+      </div>
+    </div>
+  </body>
+</html>
